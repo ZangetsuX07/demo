@@ -1,0 +1,580 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>WHAT ARE YOUR VISITING HOURS</pattern>
+        <template>
+    Our visiting hours are from 9am to 8pm, Monday through Sunday. Please note that visiting hours may vary depending on the department and patient condition.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW DO I MAKE AN APPOINTMENT</pattern>
+        <template>
+    You can make an appointment by calling our scheduling department at 555-555-5555 or by using our online portal. Please let me know what type of appointment you need and I can guide you through the process.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHERE CAN I FIND INFORMATION ABOUT YOUR DOCTORS</pattern>
+        <template>
+    You can find information about our doctors on our website or by contacting our physician referral line at 555-555-5555.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHEN IS THE BEST TIME TO VISIT THE EMERGENCY ROOM?</pattern>
+        <template>
+            The best time to visit the emergency room is typically [insert best time details]. If it's urgent, please come in immediately.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>DO YOU OFFER APPOINTMENTS IN THE EVENINGS OR ON WEEKENDS?</pattern>
+        <template>
+            Yes, we offer appointments in the evenings and on weekends. Would you like to schedule one?
+        </template>
+    </category>
+
+    <!-- Availability of Specific Doctor -->
+    <category>
+        <pattern>CAN I CHECK THE AVAILABILITY OF A SPECIFIC DOCTOR AT A CERTAIN TIME?</pattern>
+        <template>
+            I can check the availability of Dr. VK for you. When would you like to schedule the appointment?
+        </template>
+    </category>
+
+    <!-- Outpatient Clinic Hours -->
+    <category>
+        <pattern>WHAT ARE YOUR OUTPATIENT CLINIC HOURS?</pattern>
+        <template>
+            Our outpatient clinic hours are 12 pm Is there a specific department you need to visit?
+        </template>
+    </category>
+
+    <!-- Test Results Time -->
+    <category>
+        <pattern>HOW LONG DOES IT TAKE TO GET TEST RESULTS?</pattern>
+        <template>
+            Test results typically take 1 day for hard cody We'll inform you as soon as they're available.
+        </template>
+    </category>
+
+    <!-- Waiting Time for Non-Emergency Surgeries -->
+    <category>
+        <pattern>IS THERE A WAITING TIME FOR NON-EMERGENCY SURGERIES?</pattern>
+        <template>
+            Yes, there might be a waiting time depending on the surgery and current schedule. Would you like to discuss scheduling options?
+        </template>
+    </category>
+
+    <!-- Open on Public Holidays -->
+    <category>
+        <pattern>ARE YOU OPEN ON PUBLIC HOLIDAYS?</pattern>
+        <template>
+            Yes, we are open on public holidays. Is there something specific you need assistance with during a holiday?
+        </template>
+    </category>
+
+    <!-- Telemedicine Appointment Outside Regular Hours -->
+    <category>
+        <pattern>CAN I SCHEDULE A TELEMEDICINE APPOINTMENT OUTSIDE OF REGULAR HOURS?</pattern>
+        <template>
+            Telemedicine appointments can be scheduled outside of regular hours. When would you prefer to have the appointment?
+        </template>
+    </category>
+
+    <!-- Arrival Time for Appointment -->
+    <category>
+        <pattern>HOW EARLY SHOULD I ARRIVE FOR MY APPOINTMENT?</pattern>
+        <template>
+            It's recommended to arrive [insert arrival time recommendation] before your appointment time. Is there anything else I can assist you with?
+        </template>
+    </category>
+    <category>
+        <pattern>HOW CAN I FIND A LIST OF DOCTORS SPECIALIZING IN *?</pattern>
+        <template>
+            You can find a list of doctors specializing in <star/>
+ on our website or by contacting our patient services department. Would you like me to assist you with that?
+        </template>
+    </category>
+
+    <!-- Information about Dr. [Name], Qualifications, and Experience -->
+    <category>
+        <pattern>CAN YOU TELL ME MORE ABOUT DR SHUBHAM</pattern>
+        <template>
+            Dr Shubham is specialize in Nero surgery 
+        </template>
+    </category>
+
+    <!-- Bilingual Doctors Speaking [Specific Language] -->
+    <category>
+        <pattern>DO YOU HAVE BILINGUAL DOCTORS WHO SPEAK ENGLISH?</pattern>
+        <template>
+            Yes, we have bilingual doctors who speak english 
+        </template>
+    </category>
+
+    <!-- Best Way to Make an Appointment with a Specialist -->
+    <category>
+        <pattern>WHAT IS THE BEST WAY TO MAKE AN APPOINTMENT WITH A SPECIALIST?</pattern>
+        <template>
+            The best way to make an appointment with a specialist is to call our appointment scheduling department at [phone number] or use our online booking system. How can I assist you further?
+        </template>
+    </category>
+
+    <!-- Female Doctors Available for Certain Specialties -->
+    <category>
+        <pattern>ARE THERE FEMALE DOCTORS AVAILABLE FOR CERTAIN SPECIALTIES?</pattern>
+        <template>
+            Yes, we have female doctors available for various specialties. Would you like to schedule an appointment with a female doctor?
+        </template>
+    </category>
+
+    <!-- Getting a Second Opinion from Another Doctor -->
+    <category>
+        <pattern>HOW DO I GET A SECOND OPINION FROM ANOTHER DOCTOR?</pattern>
+        <template>
+            You can request a second opinion by speaking with your primary doctor or contacting our patient advocacy department. Would you like assistance with that?
+        </template>
+    </category>
+
+    <!-- Requesting a Particular Doctor for Surgery -->
+    <category>
+        <pattern>CAN I REQUEST A PARTICULAR DOCTOR FOR MY SURGERY?</pattern>
+        <template>
+            Yes, you can request a particular doctor for your surgery. Please let us know whom you would like to request, and we will do our best to accommodate your preference.
+        </template>
+    </category>
+
+    <!-- Doctors' Board Certification -->
+    <category>
+        <pattern>ARE YOUR DOCTORS BOARD-CERTIFIED?</pattern>
+        <template>
+            Yes, all our doctors are board-certified in their respective specialties. Is there a specific certification you would like to inquire about?
+        </template>
+    </category>
+
+    <!-- Contacting a Doctor in Case of Emergency -->
+    <category>
+        <pattern>HOW CAN I CONTACT A DOCTOR IN CASE OF AN EMERGENCY?</pattern>
+        <template>
+            In case of emergency, please call 911 immediately. For non-emergency medical questions, you can contact our hospital switchboard at [phone number]. Is there anything else I can assist you with?
+        </template>
+    </category>
+
+    <!-- What to Bring for Consultation with the Doctor -->
+    <category>
+        <pattern>WHAT DO I NEED TO BRING FOR MY CONSULTATION WITH THE DOCTOR?</pattern>
+        <template>
+            Please bring your identification, insurance card, any relevant medical records, and a list of current medications. Is there anything specific you need assistance preparing for your consultation?
+        </template>
+    </category>
+    <category>
+        <pattern>HOW DO I PREPARE FOR SURGERY?</pattern>
+        <template>
+            To prepare for surgery, you should [insert preparation instructions]. It's important to follow all pre-operative guidelines provided by your doctor. Would you like more detailed information?
+        </template>
+    </category>
+
+    <!-- Risks Associated with Specific Surgery -->
+    <category>
+        <pattern>WHAT ARE THE RISKS ASSOCIATED WITH * SURGERY?</pattern>
+        <template>
+            The risks associated with <star/>
+ surgery may include [insert risks]. Your surgeon will discuss specific risks with you before the procedure. Is there anything else you would like to know?
+        </template>
+    </category>
+
+    <!-- Procedure Explanation for Specific Surgery -->
+    <category>
+        <pattern>CAN YOU EXPLAIN THE PROCEDURE FOR * SURGERY?</pattern>
+        <template>
+            The procedure for <star/>
+ surgery involves [insert procedure details]. If you have specific questions about the procedure, please feel free to ask.
+        </template>
+    </category>
+
+    <!-- Anesthesia Type for Specific Surgery -->
+    <category>
+        <pattern>WHAT TYPE OF ANESTHESIA WILL BE USED FOR * SURGERY?</pattern>
+        <template>
+            <star/>
+ surgery typically requires [insert anesthesia type]. Your anesthesiologist will determine the most suitable anesthesia plan for you based on your medical history and the procedure. Would you like more information?
+        </template>
+    </category>
+
+    <!-- Recovery Time after Specific Surgery -->
+    <category>
+        <pattern>HOW LONG DOES RECOVERY TYPICALLY TAKE AFTER * SURGERY?</pattern>
+        <template>
+            Recovery time after <star/>
+ surgery varies but typically takes [insert recovery time]. Your doctor will provide personalized recovery guidelines based on your surgery. Is there anything else you'd like to know about recovery?
+        </template>
+    </category>
+
+    <!-- Post-Operative Care Instructions -->
+    <category>
+        <pattern>WHAT POST-OPERATIVE CARE INSTRUCTIONS SHOULD I FOLLOW?</pattern>
+        <template>
+            After surgery, it's important to [insert post-operative care instructions]. Your doctor will provide specific instructions tailored to your surgery and health needs. Is there anything specific you'd like to ask about post-operative care?
+        </template>
+    </category>
+
+    <!-- Activity Restrictions after Surgery -->
+    <category>
+        <pattern>ARE THERE ANY RESTRICTIONS ON ACTIVITIES AFTER SURGERY?</pattern>
+        <template>
+            Yes, after surgery, you may have [insert activity restrictions]. Your doctor will advise you on when it's safe to resume normal activities. Would you like more details on activity restrictions?
+        </template>
+    </category>
+
+    <!-- Visitors during Recovery -->
+    <category>
+        <pattern>CAN I HAVE VISITORS DURING RECOVERY IN THE HOSPITAL?</pattern>
+        <template>
+            Yes, visitors are generally allowed during recovery in the hospital. However, there may be restrictions based on the patient's condition and hospital policies. Is there anything specific you'd like to know about visitation?
+        </template>
+    </category>
+
+    <!-- Specialized Unit for Post-Surgery Care -->
+    <category>
+        <pattern>IS THERE A SPECIALIZED UNIT FOR POST-SURGERY CARE?</pattern>
+        <template>
+            Yes, we have specialized units dedicated to post-surgery care. These units provide specialized nursing and medical care to support your recovery. Would you like more information about our post-surgery care units?
+        </template>
+    </category>
+
+    <!-- Transportation Arrangements after Surgery -->
+    <category>
+        <pattern>HOW DO I ARRANGE FOR TRANSPORTATION AFTER SURGERY?</pattern>
+        <template>
+            We can assist you in arranging transportation after your surgery. Please inform us of your needs, and we'll coordinate transportation services for you. Is there anything else you'd like assistance with?
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IMAGING SERVICES DO YOU OFFER?</pattern>
+        <template>
+            We offer a range of imaging services including X-rays, CT scans, MRI scans, ultrasound, and more. Is there a specific imaging service you're interested in?
+        </template>
+    </category>
+
+    <!-- On-Site Laboratory for Test Results -->
+    <category>
+        <pattern>DO YOU HAVE A LABORATORY ON-SITE FOR TEST RESULTS?</pattern>
+        <template>
+            Yes, we have an on-site laboratory for conducting tests and obtaining results promptly. Would you like to inquire about a specific test?
+        </template>
+    </category>
+
+    <!-- Access to Medical Records Online -->
+    <category>
+        <pattern>CAN I ACCESS MY MEDICAL RECORDS ONLINE?</pattern>
+        <template>
+            Yes, you can access your medical records online through our secure patient portal. Would you like assistance in setting up access?
+        </template>
+    </category>
+
+    <!-- Availability of Private Rooms for Patients -->
+    <category>
+        <pattern>ARE THERE PRIVATE ROOMS AVAILABLE FOR PATIENTS?</pattern>
+        <template>
+            Yes, we offer private rooms for patients who prefer additional privacy and comfort during their stay. Would you like to request a private room?
+        </template>
+    </category>
+
+    <!-- Types of Rehabilitation Services Provided -->
+    <category>
+        <pattern>WHAT TYPES OF REHABILITATION SERVICES DO YOU PROVIDE?</pattern>
+        <template>
+            We provide rehabilitation services such as physical therapy, occupational therapy, speech therapy, and more. Are you interested in a specific type of rehabilitation?
+        </template>
+    </category>
+
+    <!-- Palliative Care for Terminally Ill Patients -->
+    <category>
+        <pattern>DO YOU OFFER PALLIATIVE CARE FOR TERMINALLY ILL PATIENTS?</pattern>
+        <template>
+            Yes, we offer palliative care services to support the comfort and quality of life for terminally ill patients and their families. Would you like more information about our palliative care program?
+        </template>
+    </category>
+
+    <!-- Accommodations for Family Members or Caregivers -->
+    <category>
+        <pattern>ARE THERE ACCOMMODATIONS FOR FAMILY MEMBERS OR CAREGIVERS?</pattern>
+        <template>
+            We provide accommodations for family members or caregivers to stay close to their loved ones during their hospital stay. How can we assist you further with accommodations?
+        </template>
+    </category>
+
+    <!-- Amenities Available for Patients during Stay -->
+    <category>
+        <pattern>WHAT AMENITIES ARE AVAILABLE FOR PATIENTS DURING THEIR STAY?</pattern>
+        <template>
+            Patients have access to amenities such as TV, Wi-Fi, dining services, and more to enhance their comfort during their hospital stay. Is there a specific amenity you're interested in?
+        </template>
+    </category>
+
+    <!-- Providing Feedback about Hospital Experience -->
+    <category>
+        <pattern>HOW CAN I PROVIDE FEEDBACK ABOUT MY EXPERIENCE AT YOUR HOSPITAL?</pattern>
+        <template>
+            You can provide feedback about your experience at our hospital by filling out a patient satisfaction survey or contacting our patient relations department. Would you like assistance in providing feedback?
+        </template>
+    </category>
+
+    <!-- On-Site Pharmacy for Prescription Medications -->
+    <category>
+        <pattern>DO YOU HAVE A PHARMACY ON-SITE FOR PRESCRIPTION MEDICATIONS?</pattern>
+        <template>
+            Yes, we have an on-site pharmacy where you can fill your prescription medications before leaving the hospital. Would you like to speak with a pharmacist or refill a prescription?
+        </template>
+    </category>
+
+    <category>
+        <pattern>DO YOU OFFER TELEMEDICINE SERVICES</pattern>
+        <template>
+    Yes, we offer telemedicine services for certain conditions and appointments. Please let me know if you're interested in telemedicine and I can provide more information.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT SHOULD I DO IF I HAVE A MEDICAL EMERGENCY</pattern>
+        <template>
+    If you have a medical emergency, please call 911 or visit our emergency room immediately.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW DO I REQUEST MY MEDICAL RECORDS</pattern>
+        <template>
+    You can request your medical records by contacting our health information management department at 555-555-5555.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHERE CAN I FIND INFORMATION ABOUT YOUR HOSPITAL'S SPECIALTIES</pattern>
+        <template>
+    You can find information about our hospital's specialties on our website or by contacting our physician referral line at 555-555-5555.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I CONTACT THE BILLING DEPARTMENT</pattern>
+        <template>
+    You can contact our billing department at 555-555-5555 or by using our online portal.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT INSURANCE PLANS DO YOU ACCEPT</pattern>
+        <template>
+    We accept a wide range of insurance plans. Please let me know your insurance provider and I can check on our participation.
+        </template>
+    </category>
+
+    <category>
+        <pattern>CAN I PAY MY BILL ONLINE</pattern>
+        <template>
+    Yes, you can pay your bill online through our website or by using our online portal.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE YOUR POLICIES ON PATIENT CONFIDENTIALITY</pattern>
+        <template>
+    We take patient confidentiality very seriously and follow all HIPAA regulations to protect your personal and medical information.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHERE IS THE EMERGENCY ROOM LOCATED</pattern>
+        <template>
+    The emergency room is located on the first floor of our hospital, near the main entrance.
+        </template>
+    </category>
+
+    <category>
+        <pattern>DO YOU OFFER VALET PARKING</pattern>
+        <template>
+    Yes, we offer valet parking for patients and visitors.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW DO I GET TO THE [SPECIFIC DEPARTMENT] FROM THE MAIN ENTRANCE</pattern>
+        <template>
+    Please let me know which department you're trying to reach and I can provide directions from the main entrance.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT DO I DO IF I LOST MY PRESCRIPTION</pattern>
+        <template>
+    If you lost your prescription, please contact your doctor or our pharmacy department at 555-555-5555 for assistance.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHERE CAN I FIND INFORMATION ABOUT YOUR MATERNITY SERVICES</pattern>
+        <template>
+    You can find information about our maternity services on our website or by contacting our maternity department at 555-555-5555.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW CAN I VOLUNTEER AT THE HOSPITAL</pattern>
+        <template>
+    You can volunteer at the hospital by contacting our volunteer department at 555-555-5555.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT AMENITIES DO YOU OFFER FOR PATIENTS' FAMILIES</pattern>
+        <template>
+    We offer a variety of amenities for patients' families, including a cafeteria
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT PREVENTIVE HEALTH SCREENINGS DO YOU RECOMMEND?</pattern>
+        <template>
+            We recommend preventive health screenings such as [insert recommended screenings]. It's important to discuss with your doctor which screenings are appropriate based on your age and health history. Would you like more information about specific screenings?
+        </template>
+    </category>
+
+    <!-- Maintaining Healthy Lifestyle with Chronic Conditions -->
+    <category>
+        <pattern>HOW CAN I MAINTAIN A HEALTHY LIFESTYLE WHILE MANAGING CHRONIC CONDITIONS?</pattern>
+        <template>
+            You can maintain a healthy lifestyle by [insert tips for managing chronic conditions]. Our healthcare team can provide personalized advice and support. Is there a specific chronic condition you'd like to discuss?
+        </template>
+    </category>
+
+    <!-- Wellness Programs or Classes Offered -->
+    <category>
+        <pattern>WHAT WELLNESS PROGRAMS OR CLASSES DO YOU OFFER?</pattern>
+        <template>
+            We offer wellness programs and classes such as [insert examples of programs/classes]. These programs aim to promote health and well-being. Would you like more details on a specific program?
+        </template>
+    </category>
+
+    <!-- Benefits of Telemedicine for Healthcare Access -->
+    <category>
+        <pattern>CAN YOU EXPLAIN THE BENEFITS OF TELEMEDICINE FOR HEALTHCARE ACCESS?</pattern>
+        <template>
+            Telemedicine offers benefits such as convenient access to healthcare from home, reduced travel time, and timely consultations with specialists. Would you like to schedule a telemedicine appointment or learn more about its benefits?
+        </template>
+    </category>
+
+    <!-- Support Services for Mental Health Concerns -->
+    <category>
+        <pattern>ARE THERE SUPPORT SERVICES AVAILABLE FOR MENTAL HEALTH CONCERNS?</pattern>
+        <template>
+            Yes, we offer support services for mental health concerns including counseling, therapy, and support groups. How can we assist you with your mental health needs?
+        </template>
+    </category>
+
+    <!-- Accessing Nutritional Counseling Services -->
+    <category>
+        <pattern>HOW CAN I ACCESS NUTRITIONAL COUNSELING SERVICES?</pattern>
+        <template>
+            You can access nutritional counseling services by scheduling an appointment with our registered dietitians. They can provide personalized nutrition advice based on your health goals and needs. Would you like assistance in scheduling a consultation?
+        </template>
+    </category>
+
+    <!-- Approach to Patient-Centered Care -->
+    <category>
+        <pattern>WHAT IS YOUR APPROACH TO PATIENT-CENTERED CARE?</pattern>
+        <template>
+            Our approach to patient-centered care focuses on [insert hospital's approach]. We prioritize your preferences, values, and needs in every aspect of your care. Is there something specific you'd like to know about our approach?
+        </template>
+    </category>
+
+    <!-- Home Healthcare Services for Elderly Patients -->
+    <category>
+        <pattern>DO YOU PROVIDE HOME HEALTHCARE SERVICES FOR ELDERLY PATIENTS?</pattern>
+        <template>
+            Yes, we provide home healthcare services for elderly patients who require medical care and support at home. Our services include [insert types of services offered]. Would you like to inquire about home healthcare for yourself or a family member?
+        </template>
+    </category>
+
+    <!-- Participating in Clinical Trials -->
+    <category>
+        <pattern>CAN I PARTICIPATE IN CLINICAL TRIALS AT YOUR HOSPITAL?</pattern>
+        <template>
+            Yes, we conduct clinical trials to evaluate new treatments and therapies. You can participate in clinical trials by discussing eligibility with your doctor or our research team. Would you like more information about current clinical trials?
+        </template>
+    </category>
+
+    <!-- Community Outreach Programs Involved In -->
+    <category>
+        <pattern>WHAT COMMUNITY OUTREACH PROGRAMS ARE YOU INVOLVED IN?</pattern>
+        <template>
+            We are involved in community outreach programs such as [insert examples of programs]. These programs aim to promote health education, screenings, and community wellness. Is there a specific program you're interested in learning more about?
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT TYPES OF INSURANCE DO YOU ACCEPT?</pattern>
+        <template>
+            We accept a variety of insurance plans including [insert types of insurance accepted]. Please provide your insurance information, and we can verify coverage for you.
+        </template>
+    </category>
+
+    <!-- Understanding Insurance Coverage for Specific Procedure -->
+    <category>
+        <pattern>CAN YOU HELP ME UNDERSTAND MY INSURANCE COVERAGE FOR *?</pattern>
+        <template>
+            I can help you understand your insurance coverage for <star/>
+. Please provide your insurance details, and we'll check your coverage and benefits for the procedure.
+        </template>
+    </category>
+
+    <!-- Payment Options for Medical Bills -->
+    <category>
+        <pattern>WHAT ARE MY PAYMENT OPTIONS FOR MEDICAL BILLS?</pattern>
+        <template>
+            Payment options for medical bills include [insert payment options]. Our billing department can assist you in setting up a payment plan if needed. How can I assist you with your bill payment?
+        </template>
+    </category>
+
+    <!-- Financial Assistance or Payment Plans -->
+    <category>
+        <pattern>DO YOU OFFER FINANCIAL ASSISTANCE OR PAYMENT PLANS?</pattern>
+        <template>
+            Yes, we offer financial assistance programs and payment plans. Please contact our billing department to discuss options that best suit your needs.
+        </template>
+    </category>
+
+    <!-- Estimate for Cost of Treatment -->
+    <category>
+        <pattern>HOW CAN I GET AN ESTIMATE FOR THE COST OF TREATMENT?</pattern>
+        <template>
+            You can obtain an estimate for the cost of treatment by contacting our financial services department. They can provide you with a detailed cost breakdown based on your treatment plan.
+        </template>
+    </category>
+
+    <!-- Insurance Verification Requirements -->
+    <category>
+        <pattern>WHAT DO I NEED TO BRING FOR INSURANCE VERIFICATION?</pattern>
+        <template>
+            Please bring your insurance card and any relevant identification for insurance verification. Our staff will assist you in verifying your coverage.
+        </template>
+    </category>
+
+    <!-- Speaking with Billing Department -->
+    <category>
+        <pattern>IS THERE A BILLING DEPARTMENT I CAN SPEAK WITH REGARDING MY ACCOUNT?</pattern>
+        <template>
+            Yes, you can speak with our billing department to discuss your account and billing inquiries. They can provide assistance with payment arrangements and insurance claims.
+        </template>
+    </category>
+
+    <!-- Discounts Available for Self-Pay Patients -->
+    <category>
+        <pattern>ARE THERE ANY DISCOUNTS AVAILABLE FOR SELF-PAY PATIENTS?</pattern>
+        <template>
+            We offer discounts for self-pay patients. Our billing department can provide you with information on available discounts and payment options.
+        </template>
+    </category>
+</aiml>
